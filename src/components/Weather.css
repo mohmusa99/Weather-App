@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.weather-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+.search-wrap input::placeholder {
+  text-align: center;
+}
+
+.search-wrap input {
+  padding: 0;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Blinker;
+  src: url(/public/Blinker-SemiBold.ttf);
+}
+.blinker {
+  font-family: Blinker;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(/public/Inter-VariableFont_slnt\,wght.ttf);
+}
+.inter {
+  font-family: inter;
+}
